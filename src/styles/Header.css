@@ -84,6 +84,7 @@ ul {
 }
 
 .link__text {
+  color: var(--primary);
   text-align: center;
   padding: 9px;
   transition: all 200ms ease-in-out;

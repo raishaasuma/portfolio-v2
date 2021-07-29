@@ -51,8 +51,8 @@ function Projects() {
 
                         <p className="project__description">{project.description}</p>
                         <div className="project__buttons">
-                            <a className="project__button" href={project.demoURL}>Live Demo<span></span></a>
-                            <a className="project__button" href={project.githubURL}>View on Github<span></span></a>
+                            <a className="project__button" href={project.demoURL} target="_blank" rel="noreferrer">Live Demo<span></span></a>
+                            <a className="project__button" href={project.githubURL} target="_blank" rel="noreferrer">View on Github<span></span></a>
                         </div>
                     </div>
                     </div>
