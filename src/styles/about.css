@@ -1,0 +1,140 @@
+@font-face {
+  font-family: karla;
+  src: url('../fonts/Karla/static/Karla-Regular.ttf');
+}
+
+@font-face {
+  font-family: karla-light;
+  src: url('../fonts/Karla/static/Karla-Light.ttf');
+}
+
+@font-face {
+  font-family: karla-medium;
+  src: url('../fonts/Karla/static/Karla-Medium.ttf');
+}
+
+@font-face {
+  font-family: karla-semi;
+  src: url('../fonts/Karla/static/Karla-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: karla-bold;
+  src: url('../fonts/Karla/static/Karla-ExtraBold.ttf');
+}
+
+:root {
+  --primary-variant: #aa96da;
+  --primary: #866ebe;
+  --secondary-variant: #a8d8ea;
+  --secondary: #61a2b9;
+  --tertiary-variant: #fcbad3;
+  --tertiary: #d67fa1;
+  --base-dark: #524c5c;
+  --base-light: #dbcff7;
+}
+
+.about__image__container {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+.about {
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about__image {
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 1000px;
+  border: var(--secondary-variant) 5px solid;
+}
+
+.about__title {
+  flex-basis: 100%;
+  font-family: karla-semi;
+  color: var(--base-dark);
+  letter-spacing: 1px;
+}
+
+.about__text {
+  font-family: karla;
+  flex-basis: 100%;
+
+}
+
+.about__status {
+  border-radius: 25px;
+  display: inline-block;
+  border: var(--base-dark) 2px solid;
+  line-height: 0.2;
+  margin: 10px;
+  height: 15px;
+  width: 15px;
+  color: var(--tertiary);
+}
+
+.online {
+  background-color: rgb(101, 167, 99);
+}
+
+.offline {
+  background-color: rgb(255, 128, 128);
+}
+
+.about__code {
+  background-color: var(--secondary-variant);
+  text-decoration: none;
+  height:10px;
+  cursor: inherit;
+}
+
+.about__code__show {
+    display: none;
+}
+
+.about__code:hover ~ .about__code__show {
+    background-color:var(--tertiary);
+    border-radius: 2px;
+    display: inline-block;
+    color: white;
+    font-family: karla-bold;
+    width: auto;
+    text-align: center;
+}
+
+.main {
+  letter-spacing: 0.2px;
+}
+
+@media (min-width: 700px) {
+  .about__image {
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 900px) {
+  .about__title {
+    font-size: 36px;
+  }
+
+  .about__text {
+    /* flex-basis: 100%; */
+    font-size: 20px;
+  }
+  .about__image {
+    margin-top: 20%;
+    max-height: 300px;
+  }
+  .about__image__container {
+    flex-basis: 20%;
+  }
+  .about__content {
+    flex-basis: 50%;
+    margin: 50px;
+  }
+}

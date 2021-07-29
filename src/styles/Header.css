@@ -1,0 +1,247 @@
+@font-face {
+  font-family: karla;
+  src: url('../fonts/Karla/static/Karla-Regular.ttf');
+}
+
+@font-face {
+  font-family: karla-light;
+  src: url('../fonts/Karla/static/Karla-Light.ttf');
+}
+
+@font-face {
+  font-family: karla-medium;
+  src: url('../fonts/Karla/static/Karla-Medium.ttf');
+}
+
+@font-face {
+  font-family: karla-semi;
+  src: url('../fonts/Karla/static/Karla-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: karla-bold;
+  src: url('../fonts/Karla/static/Karla-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: spectral;
+  src: url("../fonts/Spectral/Spectral-Regular.ttf");
+}
+
+@font-face {
+  font-family: spectral-bold;
+  src: url('../fonts/Spectral/Spectral-Light.ttf');
+}
+
+:root {
+  --primary-variant: #aa96da;
+  --primary: #866ebe;
+  --secondary-variant: #a8d8ea;
+  --secondary: #61a2b9;
+  --tertiary-variant: #fcbad3;
+  --tertiary: #d67fa1;
+  --base-dark: #524c5c;
+  --base-light: #dbcff7;
+}
+
+nav {
+  font-family: karla-medium;
+  top:0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-variant);
+}
+
+.logo {
+  text-decoration: none;
+  font-family: karla-semi;
+  /* height: 100%; */
+  margin-top: 5px;
+  font-size: 20px;
+  /* color: rgb(17, 49, 77); */
+  color: var(--primary-variant);
+  /* border: rgb(16, 53, 85) 1px solid; */
+}
+
+.logo-container {
+  width: 70%;
+  display: flex;
+  margin: 5px;
+  /* outline: var(--secondary-variant) 1px solid; */
+  /* padding:10px 20px; */
+  border-radius: 1px;
+  display: flex;
+}
+
+ul {
+  display: flex;
+  width: 60%;
+}
+
+.link {
+  display: none;
+}
+
+.link__text {
+  text-align: center;
+  padding: 9px;
+  transition: all 200ms ease-in-out;
+  width: 100%;
+}
+
+.link__text:hover {
+  cursor: pointer;
+  /* background-color: var(--secondary-variant); */
+  color: var(--secondary);
+}
+
+.link__resume:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* MOBILE MENU */
+
+.menu__overlay {
+  background-color: var(--primary-variant);
+  opacity: .95;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.menu__link {
+  align-items: center;
+  flex-basis: 100%;
+  text-decoration: none;
+  color: var(--base-light);
+  height: 60px;
+  margin: 40px;
+  font-size: 40px;
+
+}
+
+.menu__link:hover {
+  color:var(--base-dark);
+}
+
+span {
+  cursor: pointer;
+}
+
+.menu_closed {
+  display: none;
+}
+
+.menu__open__btn {
+  z-index: 10;
+  border: 0;
+  padding: 0;
+  background-color: inherit;
+
+}
+
+.menu_icon {
+  width: 55px;
+  height: 35px;
+  margin: auto;
+  z-index: 10;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.menu_icon span {
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 40px;
+  background-color: var(--primary);
+  transform: rotate(0);
+  transition: all 100ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+span.one {
+  top: 5px;
+}
+
+span.two {
+  top: 15px;
+}
+
+span.three {
+  top: 25px;
+}
+
+.menu_open span{
+  background-color: aliceblue;
+}
+
+.menu_open .one {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.menu_open .two {
+  opacity: 0;
+}
+
+.menu_open .three {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+
+@media (min-width: 900px) {
+  .logo {
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding-top: 10px;
+  }
+
+  .menu__open__btn {
+    display: none;
+  }
+
+  .link {
+    font-size: 20px;
+    font-family: karla-semi;
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: center;
+    width: 80%;
+    border-radius: 3px;
+    margin-right: 2px;
+  }
+
+  /* .link__text {
+    border-radius: 20px;
+    width: 100%;
+  } */
+
+  .link__resume {
+    border-radius: 20px;
+    border:var(--primary) 1px solid;
+  }
+
+  .menu__overlay {
+    display: none;
+  }
+}
+

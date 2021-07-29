@@ -1,0 +1,46 @@
+@font-face {
+  font-family: karla;
+  src: url('../fonts/Karla/static/Karla-Regular.ttf');
+}
+
+@font-face {
+  font-family: karla-light;
+  src: url('../fonts/Karla/static/Karla-Light.ttf');
+}
+
+@font-face {
+  font-family: karla-medium;
+  src: url('../fonts/Karla/static/Karla-Medium.ttf');
+}
+
+@font-face {
+  font-family: karla-semi;
+  src: url('../fonts/Karla/static/Karla-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: karla-bold;
+  src: url('../fonts/Karla/static/Karla-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: spectral;
+  src: url('../fonts/Spectral/Spectral-Bold.ttf');
+}
+
+:root {
+  --primary-variant: #aa96da;
+  --primary: #866ebe;
+  --secondary-variant: #a8d8ea;
+  --secondary: #61a2b9;
+  --tertiary-variant: #fcbad3;
+  --tertiary: #d67fa1;
+  --base-dark: #524c5c;
+  --base-light: #dbcff7;
+}
+
+.section__title {
+  padding-top: 10%;
+  font-family: karla-semi;
+  color: var(--base-dark);
+}

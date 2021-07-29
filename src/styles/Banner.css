@@ -1,0 +1,301 @@
+@font-face {
+  font-family: karla;
+  src: url('../fonts/Karla/static/Karla-Regular.ttf');
+}
+
+@font-face {
+  font-family: karla-light;
+  src: url('../fonts/Karla/static/Karla-Light.ttf');
+}
+
+@font-face {
+  font-family: karla-medium;
+  src: url('../fonts/Karla/static/Karla-Medium.ttf');
+}
+
+@font-face {
+  font-family: karla-semi;
+  src: url('../fonts/Karla/static/Karla-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: karla-bold;
+  src: url('../fonts/Karla/static/Karla-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: spectral;
+  src: url('../fonts/Spectral/Spectral-Light.ttf');
+}
+
+:root {
+  --primary-variant: #aa96da;
+  --primary: #866ebe;
+  --secondary-variant: #a8d8ea;
+  --secondary: #61a2b9;
+  --tertiary-variant: #fcbad3;
+  --tertiary: #d67fa1;
+  --base-dark: #524c5c;
+  --base-light: #dbcff7;
+}
+
+.banner {
+  /* background-color: blueviolet; */
+  margin: 5%;
+}
+
+.banner__content {
+  margin-top: 50%;
+}
+
+.banner__content_medium {
+  font-family: karla;
+  color: var(--tertiary);
+  /* border: aqua 1px solid; */
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.banner__content_big {
+  font-family: spectral;
+  font-size: 36px;
+  color: var(--base-dark);
+}
+
+.text_em {
+  line-height: 0.45;
+  display: inline-block;
+  /* border-bottom: #52006A 4px solid; */
+  /* animation: pulse 3s infinite; */
+}
+
+.text_em:after {
+  /* line-height: 0.85; */
+  content: ''; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 0 0 auto; /* This will center the border. */
+  width: 70%; /* Change this to whatever width you want. */
+  /* padding-top: 20px; This creates some space between the element and the border. */
+  animation: underline-pulse 5s infinite;
+  border-radius: 5px;
+}
+
+@keyframes underline-pulse {
+  0%,
+  100% {
+    border-bottom: var(--primary-variant) 5px solid;
+  }
+
+  25% {
+    border-bottom: var(--secondary-variant) 5px solid;
+  }
+
+  50% {
+    border-bottom: var(--tertiary-variant) 5px solid;
+  }
+}
+
+.banner__content_small {
+  font-family: karla;
+  font-size: 16px;
+  color: var(--base-dark);
+  padding-left: 20px;
+  border-left: var(--secondary-variant) 3px solid;
+  letter-spacing: 1px;
+  margin-bottom: 20%;
+}
+
+.banner__button {
+  letter-spacing: 1px;
+  background-color: rgb(254, 244, 255);
+  font-family: karla-semi;
+  border: var(--tertiary) 2px solid;
+  color: var(--tertiary);
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.banner__button:hover {
+  background-color: var(--tertiary);
+  color: rgb(255, 255, 255);
+  border: var(--tertiary) 2px solid;
+}
+
+.text_highlight {
+  line-height: 0.95;
+  display: inline-block;
+}
+
+.text_highlight:after {
+  content:'';
+  margin:0;
+  display: block;
+  width: 0%;
+}
+
+.pink:after {
+  border-bottom: var(--tertiary-variant) 3px solid;
+  animation: hi-lite 1s 1s forwards;
+}
+
+.purple:after {
+  border-bottom: var(--primary-variant) 3px solid;
+  animation: hi-lite 1s 2.5s forwards;
+}
+
+.blue:after {
+  border-bottom: var(--secondary-variant) 3px solid;
+  animation: hi-lite 1s 4s forwards;
+}
+
+
+@-webkit-keyframes hi-lite {
+  0% {
+    width:0%;
+    /* border-bottom: var(--primary-variant) 5px solid; */
+  }
+
+  15% {
+    width:75%;
+    /* border-bottom: var(--secondary-variant) 5px solid; */
+  }
+
+  50% {
+    width:50%;
+    /* border-bottom: var(--tertiary-variant) 5px solid; */
+  }
+
+  100% {
+    width: 100%;
+    /* border-bottom: var(--tertiary-variant) 5px solid; */
+  }
+}
+
+@keyframes hi-lite {
+  0% {
+    width: 0%;
+    /* border-bottom: var(--primary-variant) 5px solid; */
+  }
+  
+  /* 25% {
+    width: 25;
+  }
+
+  50% {
+    width: 50%;
+    border-bottom: var(--tertiary-variant) 5px solid;
+  }
+
+  75% {
+    width: 75%
+  } */
+
+  100% {
+    width: 100%;
+    /* border-bottom: var(--tertiary-variant) 5px solid; */
+  }
+}
+
+/* @keyframes hi-lite {
+  0%,
+  100% {
+    width: 0%;
+    border-bottom: var(--secondary-variant) 5px solid;
+  }
+  50% {
+    width: 50%;
+    border-bottom: var(--tertiary-variant) 5px solid;
+  }
+
+  100% {
+    width: 100%;
+  }
+} */
+
+.highlight_purple {
+  /* background-color: var(--primary-variant); */
+}
+
+.highlight_blue {
+  /* background-color: var(--secondary-variant); */
+}
+
+/* TABLET */
+@media (min-width: 600px) {
+  .banner__content_big {
+    font-size: 50px;
+  }
+
+  .banner__content_medium {
+    font-size: 35px;
+  }
+
+  .banner__content_small {
+    font-size: 20px;
+    /* border-left: 2px solid var(--secondary-variant); */
+    margin-bottom: 10%;
+  }
+
+  .banner__content {
+    margin-top: 30%;
+  }
+
+  @keyframes underline-pulse {
+    0%,
+    100% {
+      border-bottom: var(--primary-variant) 10px solid;
+    }
+  
+    25% {
+      border-bottom: var(--secondary-variant) 10px solid;
+    }
+  
+    50% {
+      border-bottom: var(--tertiary-variant) 10px solid;
+    }
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+  .banner__content_big {
+    font-size: 80px;
+  }
+
+  .banner__content_medium {
+    font-size: 45px;
+  }
+
+  .banner__content_small {
+    margin-bottom: 10%;
+    font-size: 30px;
+    /* border-left: 2px solid var(--secondary-variant); */
+    width: 100%;
+  }
+
+  .banner__content {
+    margin-top: 15%;
+  }
+
+  .banner__button {
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  @keyframes underline-pulse {
+    0%,
+    100% {
+      border-bottom: var(--primary-variant) 12px solid;
+    }
+  
+    25% {
+      border-bottom: var(--secondary-variant) 12px solid;
+    }
+  
+    50% {
+      border-bottom: var(--tertiary-variant) 12px solid;
+    }
+  }
+}
