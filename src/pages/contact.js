@@ -16,7 +16,7 @@ function contact() {
                 <a className="contact__link" href="https://www.linkedin.com/in/raisha-asuma-85181aa8/" target="_blank" rel="noreferrer">
                     <span>LinkedIn</span>
                 </a>
-                <a className="contact__link" href="https://github.com/" target="_blank" rel="noreferrer">
+                <a className="contact__link" href="https://github.com/raishaasuma" target="_blank" rel="noreferrer">
                     <span>GitHub</span>
                 </a>
         </div>

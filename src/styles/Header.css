@@ -92,6 +92,11 @@ ul {
   text-decoration: none;
 }
 
+.active .link__text {
+  color: var(--tertiary);
+}
+
+
 .link__text:hover {
   cursor: pointer;
   /* background-color: var(--secondary-variant); */
@@ -125,6 +130,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+}
+
+.active.menu__link {
+  color: var(--tertiary-variant);
 }
 
 .menu__link {
@@ -210,6 +219,10 @@ span.three {
 
 
 @media (min-width: 900px) {
+  .active {
+    color: var(--tertiary);
+  }
+
   .logo {
     font-size: 24px;
     letter-spacing: 2px;

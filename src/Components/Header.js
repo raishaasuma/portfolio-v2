@@ -12,20 +12,20 @@ function Header({ menuLinks }) {
             <div className="logo-container"><Link className="logo" to="/">Raisha Asuma</Link></div>
             <ul>
                 {menuLinks.map(link => (
-                        <Link key={link.name} className="link" to={link.link}><li className="link__text">{link.name}</li></Link>
+                        <Link key={link.name} className="link" to={link.link} activeClassName="active"><li className="link__text">{link.name}</li></Link>
                 ))}
                 <a className="link" href="https://docs.google.com/document/d/e/2PACX-1vQ6j8fFifi59mAvk-GrnlPc3ELegVOaiJ4gH1LU01wZreodbRatpMrjkfxHe9Md40LAe-5GoSuNRTji/pub" target="_blank" rel="noreferrer"><li className="link__text link__resume">resume</li></a>
 
             </ul>
-            
+
             {/* MOBILE MENU */}
             <div className={`menu__overlay ${open ? "": "menu_closed"}`}>
                     <span className="menu__close__btn"></span>
                     <div className="menu__content">
-                        <Link to="/" className="menu__link">home</Link>
-                        <Link to="/work" className="menu__link">work</Link>
-                        <Link to="/about" className="menu__link">about</Link>
-                        <Link to="/contact" className="menu__link">contact</Link>
+                        <Link to="/" className="menu__link" activeClassName="active">home</Link>
+                        <Link to="/work" className="menu__link" activeClassName="active">work</Link>
+                        <Link to="/about" className="menu__link" activeClassName="active">about</Link>
+                        <Link to="/contact" className="menu__link" activeClassName="active">contact</Link>
                         <a className="menu__link menu__resume" href="https://docs.google.com/document/d/e/2PACX-1vQ6j8fFifi59mAvk-GrnlPc3ELegVOaiJ4gH1LU01wZreodbRatpMrjkfxHe9Md40LAe-5GoSuNRTji/pub" target="_blank" rel="noreferrer">resume</a>
                     </div>
                 </div>
