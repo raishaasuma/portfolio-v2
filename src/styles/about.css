@@ -123,7 +123,6 @@
   }
 
   .about__text {
-    /* flex-basis: 100%; */
     font-size: 20px;
   }
   .about__image {

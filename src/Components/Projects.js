@@ -35,12 +35,9 @@ const projectsList = [
     },
 ]
 
-// style={{backgroundColor:`${project.color}`}}
-
 function Projects() {
     return (
         <div className="projects">
-            {/* <h1 className="section__title">Featured Projects</h1> */}
             {projectsList.map(project =>(
                 <div className="project" style={{backgroundImage: `url(${project.imageURL})`}} key={project.name}>
                     <div style={{backgroundColor:`${project.overlayColor}`}} className="project__overlay">

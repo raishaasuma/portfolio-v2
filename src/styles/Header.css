@@ -230,11 +230,6 @@ span.three {
     margin-right: 2px;
   }
 
-  /* .link__text {
-    border-radius: 20px;
-    width: 100%;
-  } */
-
   .link__resume {
     border-radius: 20px;
     border:var(--primary) 1px solid;

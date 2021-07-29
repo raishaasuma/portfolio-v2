@@ -17,6 +17,7 @@ function Header({ menuLinks }) {
                 <a className="link" href="https://docs.google.com/document/d/e/2PACX-1vQ6j8fFifi59mAvk-GrnlPc3ELegVOaiJ4gH1LU01wZreodbRatpMrjkfxHe9Md40LAe-5GoSuNRTji/pub" target="_blank" rel="noreferrer"><li className="link__text link__resume">resume</li></a>
 
             </ul>
+            
             {/* MOBILE MENU */}
             <div className={`menu__overlay ${open ? "": "menu_closed"}`}>
                     <span className="menu__close__btn"></span>

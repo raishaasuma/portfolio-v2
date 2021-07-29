@@ -66,12 +66,10 @@
 }
 
 .text_em:after {
-  /* line-height: 0.85; */
-  content: ''; /* This is necessary for the pseudo element to work. */
-  display: block; /* This will put the pseudo element on its own line. */
-  margin: 0 0 0 auto; /* This will center the border. */
-  width: 70%; /* Change this to whatever width you want. */
-  /* padding-top: 20px; This creates some space between the element and the border. */
+  content: ''; 
+  display: block; 
+  margin: 0 0 0 auto; 
+  width: 70%; 
   animation: underline-pulse 5s infinite;
   border-radius: 5px;
 }
