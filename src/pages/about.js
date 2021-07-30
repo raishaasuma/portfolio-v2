@@ -24,7 +24,7 @@ function about() {
                     </p>
                     <h1 className="about__title"><div className="about__status online"><img alt=""/></div>Online</h1>
                     <p className="about__text">
-                        In the past, I've had the priviledge of working with a start-up, a non-profit, and with individual clients as a freelance developer. 
+                        In the past, I've had the privilege of working with a start-up, a non-profit, and with individual clients as a freelance developer. 
                     </p>
                     <h1 className="about__title"><div className="about__status offline"><img alt=""/></div>Offline</h1>
                     <p className="about__text">When I'm not coding, I enjoy playing video games, hiking, and cooking. <br /><br /> 
