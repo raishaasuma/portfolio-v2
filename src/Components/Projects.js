@@ -13,7 +13,9 @@ const projectsList = [
         "demoURL" : "https://netflix-clone-68522.web.app/",
         "githubURL": "https://github.com/raishaasuma/netflix-clone",
         "imageURL": netflixImage,
-        "overlayColor": "rgba(116, 5, 5, 0.767)",
+        // "overlayColor": "rgba(116, 5, 5, 0.767)",
+        "overlayColor": "#306f86c9",
+
     },
     {
         "name": "To Do List",
@@ -22,7 +24,8 @@ const projectsList = [
         "demoURL" : "https://todo-app-571d5.web.app/",
         "githubURL": "https://github.com/raishaasuma/todo-app-react",
         "imageURL": toDoImage,
-        "overlayColor": "rgba(17, 68, 83, 0.767)",
+        // "overlayColor": "rgba(17, 68, 83, 0.767)",
+        "overlayColor": "#306f86c9",
     },
     {
         "name": "Portfolio v1",
@@ -31,7 +34,9 @@ const projectsList = [
         "demoURL" : "https://jovial-swirles-fbd0f3.netlify.app/",
         "githubURL": "https://github.com/raishaasuma/portfolio-website",
         "imageURL": portfolioV1Image,
-        "overlayColor": "rgba(99, 9, 107, 0.651)",
+        // "overlayColor": "rgba(99, 9, 107, 0.651)",
+        "overlayColor": "#306f86c9",
+
     },
 ]
 
@@ -40,7 +45,7 @@ function Projects() {
         <div className="projects">
             {projectsList.map(project =>(
                 <div className="project" style={{backgroundImage: `url(${project.imageURL})`}} key={project.name}>
-                    <div style={{backgroundColor:`${project.overlayColor}`}} className="project__overlay">
+                    <div style={{backgroundColor:`${project.overlayColor}`, "border-radius": "15px"}} className="project__overlay">
                     <div className="project__content">
                     <div className="project__tools">
                         {(project.tools).map((tool) => (

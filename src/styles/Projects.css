@@ -32,6 +32,7 @@
   --tertiary: #d67fa1;
   --base-dark: #524c5c;
   --base-light: #dbcff7;
+  --tertiar--secondary: #306f86c9;
 }
 
 .section__title {
@@ -51,6 +52,7 @@
 }
 
 .project {
+  border-radius: 15px;
   background-size: cover;
   margin: 1%;
   margin-top: 10px;
