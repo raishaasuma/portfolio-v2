@@ -170,21 +170,21 @@
 /* TABLET */
 @media (min-width: 600px) {
   .banner__content_big {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .banner__content_medium {
-    font-size: 35px;
+    font-size: 20px;
   }
 
   .banner__content_small {
-    font-size: 20px;
+    font-size: 16px;
     /* border-left: 2px solid var(--secondary-variant); */
     margin-bottom: 10%;
   }
 
   .banner__content {
-    margin-top: 30%;
+    margin-top: 10%;
   }
 
   @keyframes underline-pulse {
@@ -206,26 +206,26 @@
 /* DESKTOP */
 @media (min-width: 900px) {
   .banner__content_big {
-    font-size: 80px;
+    font-size: 3.5vw;
   }
 
   .banner__content_medium {
-    font-size: 45px;
+    font-size: 2vw;
   }
 
   .banner__content_small {
     margin-bottom: 10%;
-    font-size: 30px;
+    font-size: 1.7vw;
     /* border-left: 2px solid var(--secondary-variant); */
     width: 100%;
   }
 
   .banner__content {
-    margin-top: 15%;
+    margin-top: 5%;
   }
 
   .banner__button {
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px;
   }
 
