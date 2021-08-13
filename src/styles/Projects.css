@@ -37,6 +37,10 @@
 
 .section__title {
   width: 100%;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  /* background-color: #1a6783; */
+  /* max-height: 10px; */
 }
 
 
@@ -149,9 +153,11 @@
     font-size: 14px;
     margin-right: 15px;
   }
+
 }
 
 @media (min-width: 1200px) {
+
   .project {
     flex-basis: 31%;
     height: 500px;
