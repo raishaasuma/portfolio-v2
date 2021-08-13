@@ -64,7 +64,7 @@
   font-family: karla;
   color: white;
   flex-basis: 80%;
-  margin-top: 60px;
+  margin-top: 30px;
   font-size: 20px;
   letter-spacing: 1px;
   padding: 20px;
@@ -81,7 +81,7 @@
 
 @media (min-width: 700px) {
   .contact__link {
-    margin: 80px 20%;
+    margin: 30px 10%;
     padding: 35px;
     flex-basis: 40%;
     font-size: 30px;
